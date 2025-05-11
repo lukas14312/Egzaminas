@@ -72,5 +72,3 @@ Tai yra egzamino projektas, sukurtas naudojant **Laravel**, **Blade** ir **Breez
 
     Projekto adresas bus `http://localhost:8000`.
 
-    - **Vartotojo vardas**: `user@example.com`
-    - **Slaptažodis**: `password`
