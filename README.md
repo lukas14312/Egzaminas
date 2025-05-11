@@ -4,7 +4,7 @@
 Tai yra egzamino projektas, sukurtas naudojant **Laravel**, **Blade** ir **Breeze**. Projektas leidžia vartotojams peržiūrėti prekes, pridėti jas į krepšelį, registruotis ir prisijungti. Taip pat įdiegta **Mailtrap** sistema, skirta pašto siuntimui testavimo tikslams.
 
 ## Funkcijos
-- **Prekių katalogas**: Peržiūrėti įvairias prekes pagal kategorijas (pvz., Elektronika, Apranga).
+- **Prekių katalogas**: Peržiūrėti įvairias prekes pagal kategorijas
 - **Prekių pridėjimas**: Galimybė pridėti naujas prekes, taip pat įkelti nuotraukas.
 - **Prekių redagavimas ir šalinimas**: Galimybė redaguoti ir šalinti prekes iš katalogo.
 - **Vartotojo paskyra**: Vartotojai gali registruotis, prisijungti, keisti slaptažodžius ir redaguoti savo paskyros informaciją.
@@ -21,23 +21,27 @@ Tai yra egzamino projektas, sukurtas naudojant **Laravel**, **Blade** ir **Breez
 ## Diegimas
 
 1. **Klono projekto repozitoriją**:
+
     ```bash
     git clone https://github.com/lukas14312/Egzaminas.git
     ```
 
 2. **Įdiekite priklausomybes**:
     Projekto kataloge paleiskite:
+
     ```bash
     cd Egzaminas
     composer install
     ```
 
 3. **Sukurkite `.env` failą** ir užpildykite su savo duomenų bazės ir Mailtrap nustatymais:
+
     ```bash
     cp .env.example .env
     ```
 
 4. **Sukurkite duomenų bazę** ir įvykdykite migracijas:
+
     ```bash
     php artisan migrate
     ```
@@ -47,6 +51,7 @@ Tai yra egzamino projektas, sukurtas naudojant **Laravel**, **Blade** ir **Breez
     2. Sukurkite naują Mailtrap "Inbox".
     3. Gaukite Mailtrap SMTP nustatymus (Smtp serverį, vartotojo vardą, slaptažodį).
     4. Konfigūruokite **.env** failą:
+
        ```plaintext
        MAIL_MAILER=smtp
        MAIL_HOST=smtp.mailtrap.io
@@ -60,6 +65,7 @@ Tai yra egzamino projektas, sukurtas naudojant **Laravel**, **Blade** ir **Breez
 
 6. **Sukurkite aplikaciją ir pasiekite ją per naršyklę**:
     Norėdami paleisti projektą, naudokite:
+
     ```bash
     php artisan serve
     ```
